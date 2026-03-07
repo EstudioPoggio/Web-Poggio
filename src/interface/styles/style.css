@@ -3,9 +3,14 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
     color: #2b2b2b;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 /* ================= NAVBAR ================= */
 
@@ -164,9 +169,7 @@ text-align:right;
 text-align:left;
 }
 
-#cobertura{
-padding-bottom:20px;
-}
+
 /* ================= SERVICES ================= */
 
 .services {
@@ -428,4 +431,31 @@ width:55px;
 height:55px;
 }
 
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    scroll-margin-top: 90px;
+}
+
+.section:first-of-type {
+    padding-top: 140px;
+}
+
+#cobertura {
+    scroll-margin-top: 15px;
+}
+
+#contacto {
+    scroll-margin-top: 20px;
+}
+
+header.scrolled {
+background: rgba(255,255,255,0.85);
+backdrop-filter: blur(8px);
+box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
