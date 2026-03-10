@@ -34,7 +34,7 @@ header.scrolled {
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
 }
 
 .nav-links {
@@ -55,10 +55,15 @@ header.scrolled {
 }
 
 /* ================= HERO ================= */
-
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #ffffff 60%, #eef4fa 100%);
+
+    background:
+        url("../assets/img/icon3Poggio.png") no-repeat center 46%,
+        linear-gradient(135deg, #ffffff 60%, #eef4fa 100%);
+
+    background-size: 700px, cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,10 +71,11 @@ header.scrolled {
     padding: 0 20px;
 }
 
+
 .hero h1 {
     font-size: 48px;
     color: #154c7d;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero p {
