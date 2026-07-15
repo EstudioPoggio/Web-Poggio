@@ -35,6 +35,15 @@ header.scrolled {
 
 .logo img {
     height: 60px;
+    opacity: 0;
+    transform: translateX(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Mostrar el logo cuando se sale del inicio */
+header.scrolled .logo img {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .nav-links {
