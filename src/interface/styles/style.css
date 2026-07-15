@@ -55,20 +55,44 @@ header.scrolled {
 }
 
 /* ================= HERO ================= */
-.hero {
-    height: 100vh;
+.hero{
+    position: relative;
 
-    background:
-        url("../assets/img/icon3Poggio.png") no-repeat center 46%,
-        linear-gradient(135deg, #ffffff 60%, #eef4fa 100%);
+    min-height: 100vh;
 
-    background-size: 700px, cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 20px;
+    text-align:center;
+
+    padding: 40px 20px 35px;
+
+    background: linear-gradient(135deg,#ffffff 60%,#eef4fa 100%);
+}
+
+
+.hero-icon{
+    width:420px;
+
+    display:block;
+
+    margin:0 auto 30px;
+
+    transform: translateX(-300px);
+}
+
+
+.hero-line{
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 20px;
+
+    background: #1568ad;
 }
 
 
@@ -91,6 +115,8 @@ header.scrolled {
     text-decoration: none;
     border-radius: 30px;
     transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 60px;
 }
 
 .btn-primary:hover {
