@@ -94,14 +94,13 @@
 <!-- ================= COBERTURA ================= -->
 <section id="cobertura" class="section background-soft">
 
-<h2>Zona de Cobertura</h2>
-<p class="section-text">
+<h2 class="fade-up">Zona de Cobertura</h2>
+<p class="section-text fade-up">
 Operamos en varios departamentos del país.
 </p>
 
 <div class="cobertura-container">
-
-<ul class="departamentos left">
+<ul class="departamentos left fade-up">
 <li>Montevideo</li>
 <li>Canelones</li>
 <li>San José</li>
@@ -111,7 +110,7 @@ Operamos en varios departamentos del país.
 
 <img src="assets/img/iconUruguay.png" alt="Mapa de cobertura" class="mapa-cobertura fade-up">
 
-<ul class="departamentos right">
+<ul class="departamentos right fade-up">
 <li>Colonia</li>
 <li>Soriano</li>
 <li>Río Negro</li>
@@ -214,16 +213,25 @@ Operamos en varios departamentos del país.
             threshold: 0.2
         };
 
-        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                } else {
-                    entry.target.classList.add("appear");
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, appearOptions);
+    const appearOnScroll = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("appear");
+        } else {
+            entry.target.classList.remove("appear");
+        }
+
+    });
+
+    }, {
+        threshold: 0.2
+    });
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
 
         faders.forEach(fader => {
             appearOnScroll.observe(fader);
