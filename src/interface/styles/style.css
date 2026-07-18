@@ -238,7 +238,53 @@ text-align:left;
     color: #1f6fb2;
 }
 
+/* ================= DIRECTORA ================= */
 
+.director-card{
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    padding: 35px 45px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+    border-left: 6px solid #1f6fb2;
+
+}
+
+.director-card h3{
+
+    margin-top: 0;
+
+    color: #154c7d;
+
+    font-size: 24px;
+
+}
+
+.director-name{
+
+    font-size: 20px;
+
+    color: #1f6fb2;
+
+    margin: 10px 0 20px;
+
+}
+
+.director-card p{
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
 
 /* ================= CONTACTO ================= */
 
@@ -487,12 +533,15 @@ height:55px;
     padding-top: 140px;
 }
 
-#cobertura {
-    scroll-margin-top: 15px;
-}
 
+#servicios,
+#cobertura,
 #contacto {
     scroll-margin-top: 20px;
+}
+
+#nosotros {
+    padding-bottom: 60px;
 }
 
 header.scrolled {
