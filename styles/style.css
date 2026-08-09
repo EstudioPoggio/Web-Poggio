@@ -206,7 +206,8 @@ header.scrolled .logo img {
   display: flex;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  transform: translateY(-30px);
 }
 
 .service-card {
@@ -496,9 +497,9 @@ footer {
   padding-top: 140px;
 }
 
-#servicios,
-#cobertura,
-#contacto {
+#servicios{
+  padding-top: 100px;
+  padding-bottom: 60px;
   scroll-margin-top: 20px;
 }
 
