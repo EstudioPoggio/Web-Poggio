@@ -94,7 +94,7 @@ header.scrolled .logo img {
   position: absolute;
 
   left: 0;
-  bottom: 0;
+  bottom: 80 px;
 
   width: 100%;
   height: 20px;
