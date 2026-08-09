@@ -519,6 +519,12 @@ footer {
     scroll-margin-top: 20px;
 }
 
+#contacto {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    scroll-margin-top: 20px;
+}
+
 header.scrolled {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(8px);
