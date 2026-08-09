@@ -169,7 +169,7 @@ header.scrolled .logo img {
 }
 
 .mapa-cobertura {
-  width: 350px;
+  width: 300px;
   height: auto;
 }
 .departamentos {
@@ -506,6 +506,16 @@ footer {
 #nosotros {
     padding-top: 100px;
     padding-bottom: 60px;
+    scroll-margin-top: 20px;
+}
+
+#cobertura {
+    height: 100vh;
+    box-sizing: border-box;
+
+    padding-top: 70px;
+    padding-bottom: 20px;
+
     scroll-margin-top: 20px;
 }
 
